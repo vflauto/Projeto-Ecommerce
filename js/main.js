@@ -1,0 +1,1 @@
+let site = new Site();

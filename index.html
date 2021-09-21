@@ -6,61 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light  topo">
-        <div class="container-fluid col-12">
-                <!-- logo -->
-            <div class="col-md-2 ms-4">
-                <a class="navbar-brand" href="#">Logo Here</a>
-            </div> 
-                <!-- logo -->
-                <!-- icon -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <!-- icon -->
-            <div class="collapse navbar-collapse "  id="navbarSupportedContent">
-                <!-- ---- container search ---- -->
-                <div class="col-12 col-md-10 d-flex" > 
-                    <div class="col-md-3"></div>                      
-                    
-                    <div class="col-12 col-md-6 " >
-                        <form class="d-flex ">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
-                    <div class="col-md-3"></div>
+    <header class="topo">
+        
+        <div class="logo">
+            <h1>Logo Here</h1>
+        </div><!--logo-->
+        <div class="close-search">
+            <i class="fas fa-long-arrow-alt-left"></i>
+        </div>   
+        <div class="search">
+            <form action="" method="get">
+                <div class="inline">
+                    <input class="form-control" type="text" placeholder="Pesquise um produto" aria-label="Pesquise um produto" aria-describedby="basic-addon2">
+                    <button id="basic-addon2" class="btn btn-success" type="submit">Search</button>
+                   
                 </div>
-                <!-- -----               ----- -->
-            
-                <div class="col-12 col-md-2  me-4" >
-                    <div class="col-md-6" >
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                        
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="bi bi-person-circle">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                                      </svg>
-                                     
-                                </i>
-                            </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6" style=""></div>
-                </div> 
-                
-                
-            </div>
-        </div>
-      </nav>
-
+            </form>
+        </div><!--search-->
+        <div class="login">
+            <div class="icon-user">
+                <i id="btn-search" style="font-size: 18px"  class="fas fa-search"></i>
+               <a href=""> <i style="font-size: 20px;"class="fas fa-user-circle"></i></a>
+               
+            </div><!--icon-user-->
+        </div><!--login-->
+    </header><!--search-->
+    <div class="icons-menu">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times btn-close-menu"></i>
+    </div><!--icons-menu-->
     <nav class="nav-tabs nav-bar">
         <ul>
             <li class="nav-item dropdown">
@@ -87,9 +66,13 @@
                         <li><a class="dropdown-item" href="#">...</a></li>
                     </ul>
         </ul>
-    </nav>
-    
+    </nav><!--nav-bar-->
+    <section class="banner">
+        
+    </section>
 
+<script src="js/controller/Site.js"></script>
+<script src="js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/8debdb91c9.js" crossorigin="anonymous"></script>
 

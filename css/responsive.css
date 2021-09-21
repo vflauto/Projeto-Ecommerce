@@ -1,0 +1,37 @@
+@media screen and (max-width: 520px){
+
+    
+    .search{
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0;
+        display: none;
+    }
+
+ 
+  
+
+    #btn-search{
+        
+        display: block;
+        float: left;
+        margin: 0 10px;
+        cursor: pointer;
+        
+    }
+
+
+    .nav-bar{
+        display: none;
+    }
+
+
+    .icons-menu{
+        display: block;
+    }
+
+    .icons-menu .btn-close-menu{
+        display: none;
+    }
+
+} 
