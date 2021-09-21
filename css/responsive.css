@@ -44,6 +44,19 @@
         display: block;
     }
 
+    .banner{
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper .swiper-button-next{
+        display: none;
+    }
+
+    .swiper .swiper-button-prev{
+        display: none;
+    }
+
     
 
 } 
