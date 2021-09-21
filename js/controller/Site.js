@@ -10,7 +10,8 @@ class Site {
         this.inputSearch = document.querySelector(".search");
         this.logo = document.querySelector(".logo");
         this.divLogin = document.querySelector(".login");
-        this.btnMenu = document.querySelector('.icons-menu');
+        this.btnMenu = document.getElementById('btn-open-menu');
+        this.btnCloseMenu = document.getElementById("btn-close-menu");
         this.navBar = document.querySelector(".nav-bar");
         this.closeSearch = document.querySelector(".close-search");
         this.initEvents();
@@ -86,6 +87,7 @@ class Site {
             this.logo.hide();
             this.divLogin.hide();
             this.closeSearch.show();
+            this.btnMenu.hide();
             
 
         });
@@ -96,15 +98,26 @@ class Site {
             this.logo.show();
             this.divLogin.show();
             this.closeSearch.hide();
+            this.btnMenu.show();
 
 
         })
 
 
         this.btnMenu.addEventListener("click", ()=> {
-            this.navBar.toggle();
+            this.navBar.show();
             this.navBar.addClassAnimated("animate__animated", "animate__slideInLeft");
+            this.btnCloseMenu.show();
+            this.btnMenu.hide();
             
+
+        });
+
+        this.btnCloseMenu.addEventListener('click', () => {
+
+            this.navBar.hide();
+            this.btnMenu.show();
+            this.btnCloseMenu.hide();
 
         })
 

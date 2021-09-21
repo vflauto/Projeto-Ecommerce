@@ -121,6 +121,10 @@ html,body {
    
 }
 
+#btn-close-menu{
+    display:none;
+}
+
 #btn-search{
     display: none;
     color: var(--bs-gray-600);
@@ -137,6 +141,7 @@ html,body {
     cursor: pointer;
     display: inline-block;
     display: none;
+    color: var(--bs-gray-600);
 }
 
 .nav-bar {
