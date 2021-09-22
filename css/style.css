@@ -211,6 +211,85 @@ html,body {
 
   /**********************************************************************************/
 
+.session-one{
+    padding: 120px 0;
+}
+
+.session-one header h2{
+    font-size: 25px;
+    color: var(--bs-gray-600);
+}
+
+.session-one .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.session-one .card-content{
+    width: 33.3%;
+    height: 550px;
+    position: relative;
+
+}
+
+.session-one .card-content a img{
+    width: 100%;
+    height: 100%;
+}
+
+.session-one .card-content div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+}
+
+.session-one .card-content div h1{
+    z-index: 99;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+    color: var(--bs-white);
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+
+}
+
+.session-one .card-content div::after{
+    content: "";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:rgba(0,0,0,.2);
+}
+
+.zoom {
+	overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+ .zoom a img {
+	width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover a img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
 
 
 

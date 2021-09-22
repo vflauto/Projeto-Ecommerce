@@ -39,6 +39,10 @@
         display: none;
     }
 
+    .nav-bar ul li {
+        display: block;
+    }
+
 
     .icons-menu{
         display: block;
@@ -55,6 +59,22 @@
 
     .swiper .swiper-button-prev{
         display: none;
+    }
+
+    /**************************************************/
+
+    .session-one{
+        padding: 80px 0;
+    }
+
+    .session-one .flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .session-one .card-content{
+        width: 100%;
+        margin-top: 10px;
     }
 
     
