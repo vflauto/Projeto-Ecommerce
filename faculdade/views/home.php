@@ -35,7 +35,7 @@
         <div class="login">
             <div class="icon-user">
                 <i id="btn-search" style="font-size: 25px"  class="fas fa-search"></i>
-               <a href=""> <i style="font-size: 25px;"class="fas fa-user-circle"></i></a>
+               <a href="/faculdade/admin/home"> <i style="font-size: 25px;"class="fas fa-user-circle"></i></a>
                
             </div><!--icon-user-->
         </div><!--login-->
